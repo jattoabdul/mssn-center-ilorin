@@ -116,28 +116,12 @@
             />
             <div>
               <p class="text-2xl font-medium uppercase">
-                Barr. Nurudeen Ibrahim
+                Prof. Yusuf ‘Lanre Badmus
               </p>
               <p class="text-xl font-semibold text-green-700">
                 State Coordinator
               </p>
-              <p class="text-xl text-orange-500">mnasir@mssnci.org</p>
-            </div>
-          </div>
-          <div class="flex items-center border-b mb-8 pb-8">
-            <img
-              src="/images/nasir.jpg"
-              alt="nasir"
-              class="rounded-full shadow h-20 mr-4"
-            />
-            <div>
-              <p class="text-2xl font-medium uppercase">
-                Dr. Aliu Alabi Badmus
-              </p>
-              <p class="text-xl font-semibold text-green-700">
-                State Coordinator
-              </p>
-              <p class="text-xl text-orange-500">mnasir@mssnci.org</p>
+              <p class="text-xl text-orange-500">lanrebadmus@mssncenterilorin.org</p>
             </div>
           </div>
           <div class="flex items-center border-b mb-8 pb-8">
@@ -153,7 +137,23 @@
               <p class="text-xl font-semibold text-green-700">
                 State Coordinator
               </p>
-              <p class="text-xl text-orange-500">mnasir@mssnci.org</p>
+              <p class="text-xl text-orange-500">archalege@mssncenterilorin.org</p>
+            </div>
+          </div>
+          <div class="flex items-center border-b mb-8 pb-8">
+            <img
+              src="/images/nasir.jpg"
+              alt="nasir"
+              class="rounded-full shadow h-20 mr-4"
+            />
+            <div>
+              <p class="text-2xl font-medium uppercase">
+                Dr. Aliu Alabi Badmus
+              </p>
+              <p class="text-xl font-semibold text-green-700">
+                State Coordinator
+              </p>
+              <p class="text-xl text-orange-500">aliubadmus@mssncenterilorin.org</p>
             </div>
           </div>
           <div class="flex items-center">
@@ -164,12 +164,12 @@
             />
             <div>
               <p class="text-2xl font-medium uppercase">
-                Prof. Yusuf ‘Lanre Badmus
+                Barr. Nurudeen Ibrahim
               </p>
               <p class="text-xl font-semibold text-green-700">
                 State Coordinator
               </p>
-              <p class="text-xl text-orange-500">mnasir@mssnci.org</p>
+              <p class="text-xl text-orange-500">nurudeen@mssncenterilorin.org</p>
             </div>
           </div>
         </div>

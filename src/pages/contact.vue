@@ -46,6 +46,9 @@
           Dollar Account Number: <a href="#" class="link"
             >1382364830</a
           ><br />
+          GBP Account Number: <a href="#" class="link"
+            >1382371472</a
+          ><br />
         </p>
         <div class="mssnci-map">
           <iframe
