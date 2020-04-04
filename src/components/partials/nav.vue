@@ -35,10 +35,16 @@
         <nuxt-link v-ripple class="link" to="/">Home</nuxt-link>
         <nuxt-link v-ripple class="link" to="/about">About</nuxt-link>
         <nuxt-link v-ripple class="link" to="/services">Services</nuxt-link>
-        <nuxt-link v-ripple class="link" to="/blog">Blog</nuxt-link>
-        <a v-ripple class="link" href="#">Projects</a>
-        <a v-ripple class="link" href="#">Contact</a>
-        <!-- <button v-ripple class="focus:outline-none">Donate now</button> -->
+        <nuxt-link v-ripple class="link" to="/projects">Projects</nuxt-link>
+      <nuxt-link v-ripple class="link" to="/blog">Blog</nuxt-link>
+      <nuxt-link v-ripple class="link" to="/contact">Contact</nuxt-link>
+      <a
+        v-ripple
+        class="link"
+        href="https://paystack.com/pay/mssnci"
+        target="_blank"
+        >Donate now</a
+      >
       </div>
     </div>
   </nav>
