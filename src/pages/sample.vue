@@ -122,6 +122,7 @@ export default {
       const { data } = await graphql(GET_TODOS);
       this.todos = data.allTodos;
     },
+
     async addTodo() {
       if (this.newTodo.length === 0) {
         return;

@@ -3,9 +3,12 @@ const { Text } = require('@keystonejs/fields');
 const { GraphQLApp } = require('@keystonejs/app-graphql');
 const { AdminUIApp } = require('@keystonejs/app-admin-ui');
 const { NuxtApp } = require('@keystonejs/app-nuxt');
+// const { StaticApp } = require('@keystonejs/app-static');
 const dotenv = require('dotenv')
 
 const { MongooseAdapter: Adapter } = require('@keystonejs/adapter-mongoose');
+
+const { Todo, Post, PostCategory, Author } = require('./schema');
 
 dotenv.config()
 
@@ -96,18 +99,17 @@ const NuxtConfig = {
   }
 };
 
-// TODO: All Schemas Created Here
-keystone.createList('Todo', {
-  schemaDoc: 'A list of things which need to be done',
-  fields: {
-    name: { type: Text, schemaDoc: 'This is the thing you need to do' },
-  },
-});
+// Schemas Creation
+keystone.createList('Todo', Todo);
+keystone.createList('Author', Author);
+keystone.createList('Post', Post);
+keystone.createList('PostCategory', PostCategory);
 
 module.exports = {
   keystone,
   apps: [
     new GraphQLApp(),
+    // new StaticApp({ path: '/static', src: 'static' }),
     new AdminUIApp(),
     new NuxtApp(NuxtConfig),
   ],
