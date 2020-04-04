@@ -1,0 +1,47 @@
+{
+  "name": "mssncenterilorin",
+  "description": "Welcome to the MSSN Center Ilorin. The purpose for which the MSSN Center Ilorin was developed is to receive, administer and support Islam.",
+  "private": true,
+  "version": "5.0.3",
+  "author": "The CodeVillage Development Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development DISABLE_LOGGING=true keystone dev",
+    "build": "cross-env NODE_ENV=production keystone build",
+    "start": "cross-env NODE_ENV=production keystone start"
+  },
+  "repository": "https://github.com/jattoabdul/mssn-center-ilorin.git",
+  "homepage": "https://github.com/jattoabdul/mssn-center-ilorin",
+  "dependencies": {
+    "@keystonejs/adapter-mongoose": "^5.2.1",
+    "@keystonejs/app-admin-ui": "^5.9.2",
+    "@keystonejs/app-graphql": "^5.1.2",
+    "@keystonejs/app-nuxt": "^5.1.2",
+    "@keystonejs/fields": "^7.0.0",
+    "@keystonejs/keystone": "^6.0.1",
+    "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "core-js": "2.6.10",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.11.0",
+    "sass-loader": "^8.0.2",
+    "sass-resources-loader": "^2.0.1",
+    "vue-content-placeholders": "^0.2.1",
+    "vue-loading-overlay": "^3.3.2",
+    "vue-multiselect": "^2.1.6",
+    "vue-ripple-directive": "^2.0.1",
+    "vue-scrollto": "^2.17.1",
+    "vue-swal": "^1.0.0",
+    "vue-toast-notification": "^0.2.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.4.0"
+  }
+}

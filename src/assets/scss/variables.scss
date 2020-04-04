@@ -1,0 +1,130 @@
+/*
+  Colors
+  ======
+*/
+
+// hex
+$light: #ffffff;
+$dark: #000000;
+$primary: #33cccd;
+$primary-dark: #009a9b;
+$primary-light: #95e6e7ed;
+$red: #ff7266;
+$light-red: #ffd6db;
+$blue: #4a90e2;
+$dark-blue: #007ace;
+$nav-blue: #191c3a;
+$yellow: yellow;
+$green: #33cc66;
+$success-yellow: #FAA11C;
+$success-green: #4CAF50;
+$dark-green: #083939;
+$grey: #f4f6f8;
+$dark-gray: #818f90;
+
+$bg-grey: #979797;
+$bg-grey-disabled: #d8d8d8;
+
+$border-grey: #eaecee;
+$border-bottom-grey: #dfe3e8;
+$border-grey-rgba: rgba(129, 143, 144, 0.2);
+$bg-black-rgba: rgba(0, 0, 0, 0.56);
+
+$grey-text: #b6b6b6;
+$dark-grey-text: #818f90;
+$darker-grey-text: #454f5b;
+$light-grey-text: #637381;
+$bluish-grey: #212b36;
+$dark-grey-rgba-text: rgba(4, 33, 33, 0.5);
+$primary-lighter-rgba: rgba(149,230,231, 0.4);
+$primary-lightest-rgba: rgba(149,230,231, 0.2);
+
+$light-white: #eaedf3;
+$shadow-light: rgba(0, 0, 0, 0.04);
+$box-shadow: 0 1px 3px 0 $shadow-light;
+
+$light-grey: #f4f6f8;
+$lighter-grey: #e4e4e4;
+$ash-grey: #f4f6f8;
+$background-ash-grey: #f8f8f8;
+$bg-color-grey: #d8d8d8;
+$progress-grey: #b1b1b1;
+
+// rgba
+
+// mixins
+@mixin breakpoint($min: 0, $max: 0) {
+  $type: type-of($min);
+
+  @if $type == string {
+    @if $min == xs {
+      @media (max-width: 767px) { @content; }       // Mobile Devices
+    }
+
+    @else if $min == sm {
+      @media (min-width: 768px) { @content; }       // Tablet Devices
+    }
+
+    @else if $min == md {
+      @media (min-width: 992px) { @content; }       // Desktops
+    }
+
+    @else if $min == lg {
+      @media (min-width: 1200px) { @content; }      // Widescreen Desktops
+    }
+
+    // Otherwise pass a warning to the compiler as to the appropriate options
+    @else {
+      @warn "The breakpoint mixin supports the following attributes: xs, sm, md, lg";
+    }
+  }
+  @else if $type == number {
+    // Allow for custom parameters for min and max size
+    $query: "all" !default;
+    @if      $min != 0 and $max != 0 { $query: "(min-width: #{$min}) and (max-width: #{$max})"; } // set both min and max
+    @else if $min != 0 and $max == 0 { $query: "(min-width: #{$min})"; } // set just min
+    @else if $min == 0 and $max != 0 { $query: "(max-width: #{$max})"; } // set just max
+    @media #{$query} { @content; }
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-only {
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-only {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-desktop-only {
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
