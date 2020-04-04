@@ -189,7 +189,8 @@
           a Technical/Skill Acquisition Centre, Library, A Mosque, Shopping
           Complex, Warehouse and Primary Health Care Facility. The project shall
           be executed in tranches and each of these structures shall be
-          implemented one after the other.
+          implemented one after the other.<br />
+          Visit the Contact page for Account Details via this link <nuxt-link to="/contact" class="text-green-500 font-bold text-2xl">Here</nuxt-link>.
         </p>
         <div
           class="flex items-center mx-auto max-w-3xl justify-center mb-10 mt-5"

@@ -2,9 +2,7 @@
   <div class="page about">
     <header class="pb-0 lg:pb-10">
       <nav-bar />
-      <div
-        class="flex flex-col justify-center items-center text-center text-white py-20"
-      >
+      <div class="flex flex-col justify-center items-center text-center text-white py-20">
         <h1 class="text-6xl font-semibold">Our Services</h1>
         <p class="flex items-center text-xl my-5">
           <nuxt-link to="/" tag="span" class="cursor-pointer">Home</nuxt-link>
@@ -20,12 +18,10 @@
       >
         <div class="service">
           <img src="/vectors/mosque.svg" alt="advice" class="icon h-20" />
-          <p class="title" style="color: #965352;">
-            Daily/Jum'ah Prayer
-          </p>
+          <p class="title" style="color: #965352;">Daily/Jum'ah Prayer</p>
           <p>
-            Friday Khutba start at 12:30 pm <br />
-            We perform all the five daily solawaat at the times specified on our
+            Friday Khutba start at 12:30 pm
+            <br />We perform all the five daily solawaat at the times specified on our
             prayer time app on this website.
           </p>
           <p class="my-2">
@@ -34,13 +30,11 @@
         </div>
         <div class="service">
           <img src="/vectors/coffin.svg" alt="advice" class="icon h-20" />
-          <p class="title" style="color: #965352;">
-            Funeral Services
-          </p>
+          <p class="title" style="color: #965352;">Funeral Services</p>
           <p>
-            Islamic Funeral and Burial Arrangement/Service<br />
-            ” …to Allah we Belong and to Him we Will Return” <br />
-            The MSSN Center Ilorin will assist your family…
+            Islamic Funeral and Burial Arrangement/Service
+            <br />” …to Allah we Belong and to Him we Will Return”
+            <br />The MSSN Center Ilorin will assist your family…
           </p>
           <p class="my-2">
             <a href="#" class="text-orange-800 hover:underline">Learn more</a>
@@ -48,9 +42,7 @@
         </div>
         <div class="service">
           <img src="/vectors/law.svg" alt="advice" class="icon h-20" />
-          <p class="title" style="color: #965352;">
-            Counselling
-          </p>
+          <p class="title" style="color: #965352;">Counselling</p>
           <p>
             The society believes that giving sincere advice is one of the
             prominent characteristics of Islamic brotherhood; it is part of
@@ -80,9 +72,7 @@
         <button
           v-ripple
           class="py-3 px-12 mx-auto block my-10 rounded text-2xl font-semibold bg-green-700 text-white focus:outline-none hover:bg-green-500"
-        >
-          Read more
-        </button>
+        >Read more</button>
       </div>
     </section>
     <section class="services services-group-2">
@@ -92,9 +82,7 @@
       >
         <div class="service">
           <img src="/vectors/hotel.svg" alt="advice" class="icon h-20" />
-          <p class="title" style="color: #965352;">
-            Lodging/Hall Rentals
-          </p>
+          <p class="title" style="color: #965352;">Lodging/Hall Rentals</p>
           <p>
             The hall and lodging facilities shall be operated on a commercial or
             profit basis and in accordance with Islamic principles. It shall
@@ -111,7 +99,8 @@
         <div class="service">
           <img src="/vectors/camp.svg" alt="advice" class="icon h-20" />
           <p class="title" style="color: #965352;">
-            Camping/<span title="Islamic Vacation Course">IVC</span>
+            Camping/
+            <span title="Islamic Vacation Course">IVC</span>
           </p>
           <p>
             The IVC/Camping is Bi-annual Islamic Vacation Course held during the
@@ -128,9 +117,7 @@
         </div>
         <div class="service">
           <img src="/vectors/invest.svg" alt="advice" class="icon h-20" />
-          <p class="title" style="color: #965352;">
-            Zakaah / Sadaqah
-          </p>
+          <p class="title" style="color: #965352;">Zakaah / Sadaqah</p>
           <p>
             The Society and the centre is offering Zakah Administration services
             through a specially constituted committee of experts. Members of the
@@ -147,8 +134,8 @@
       <span class="flex-grow" />
       <div class="content flex-grow text-white">
         <h2 class="text-5xl font-semibold text-white uppercase text-center">
-          Support us, <br />
-          we need your help.
+          Support us,
+          <br />we need your help.
         </h2>
         <p class="mx-auto max-w-3xl text-center text-2xl font-light mt-6">
           Support our Islamic Centre Project. The project is intended as a world
@@ -158,25 +145,19 @@
           Complex, Warehouse and Primary Health Care Facility. The project shall
           be executed in tranches and each of these structures shall be
           implemented one after the other.
+          <br />Visit the Contact page for Account Details via this link
+          <nuxt-link to="/contact" class="text-green-500 font-bold text-2xl">Here</nuxt-link>.
         </p>
-        <div
-          class="flex items-center mx-auto max-w-3xl justify-center mb-10 mt-5"
-        >
+        <div class="flex items-center mx-auto max-w-3xl justify-center mb-10 mt-5">
           <p class="text-5xl font-medium">Goal</p>
-          <img
-            src="/vectors/arrow-right-white.svg"
-            alt="->"
-            class="h-10 mx-5"
-          />
+          <img src="/vectors/arrow-right-white.svg" alt="->" class="h-10 mx-5" />
           <p class="text-5xl font-medium">₦750 Million</p>
         </div>
         <button
           v-ripple
           class="bg-green-700 hover:bg-green-600 focus:outline-none text-white rounded py-3 px-12 block mx-auto mt-2 mb-10 text-2xl shadow"
           @click="gotoUrl('https://paystack.com/pay/mssnci')"
-        >
-          Donate now
-        </button>
+        >Donate now</button>
         <p class="mx-auto max-w-xl text-center">
           May Allah bless you! Thank you. Those who (in charity) spend of their
           goods by night and by day, in secret and in public, have their reward
@@ -190,9 +171,9 @@
 </template>
 
 <script>
-import NavBar from '~/components/partials/nav'
-import FooTer from '~/components/partials/footer'
-import Stats from '~/components/partials/stats'
+import NavBar from "~/components/partials/nav";
+import FooTer from "~/components/partials/footer";
+import Stats from "~/components/partials/stats";
 
 export default {
   components: {
@@ -202,17 +183,17 @@ export default {
   },
   methods: {
     gotoUrl(url) {
-      window.open(url, '_blank')
+      window.open(url, "_blank");
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
 .about {
   header {
     @apply pt-5 relative bg-orange-900;
-    background-image: url('/images/bg.webp');
+    background-image: url("/images/bg.webp");
     background-size: cover;
     // background-color: rgba(255, 255, 255, 0.1);
     // background-blend-mode: lighten;
@@ -239,7 +220,7 @@ export default {
   }
 
   section.board {
-    background-image: url('/images/wide-brown-caligraphy.jpg');
+    background-image: url("/images/wide-brown-caligraphy.jpg");
     background-size: cover;
   }
 
@@ -251,14 +232,14 @@ export default {
   }
 
   section.place {
-    background-image: url('/images/place.webp');
+    background-image: url("/images/place.webp");
     background-size: cover;
     @apply py-56;
   }
 
   .school {
     @apply flex px-4;
-    background-image: url('/images/quran-darkmode.webp');
+    background-image: url("/images/quran-darkmode.webp");
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: multiply;
     background-size: cover;
@@ -283,7 +264,7 @@ export default {
   }
 
   section.stat {
-    background-image: url('/images/greenish-design.webp');
+    background-image: url("/images/greenish-design.webp");
     background-size: cover;
     padding: {
       top: 4rem;

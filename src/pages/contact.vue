@@ -26,17 +26,25 @@
           Kwara State, NG 32802
         </p>
         <p class="electronic-contact">
-          Phone 1:
-          <a href="tel:+2348033979970" class="link">234 803 397 9970</a><br />
-          Phone 2:
-          <a href="tel:+2348037060620" class="link">234 803 706 0620</a><br />
-          Phone 3:
-          <a href="tel:+2348037253303" class="link">234 803 725 3303</a><br />
-          Phone 4:
-          <a href="tel:+2348034073585" class="link">234 803 407 3585</a><br />
+          Phones:
+          <a href="tel:+2348033979970" class="link">234 803 397 9970</a> | <a href="tel:+2348037060620" class="link">234 803 706 0620</a><br />
+          Phones:
+          <a href="tel:+2348037253303" class="link">234 803 725 3303</a> | <a href="tel:+2348034073585" class="link">234 803 407 3585</a><br />
           Email:
           <a href="mailto:mssncenterilorin@gmail.com" target="_top" class="link"
             >mssncenterilorin@gmail.com</a
+          ><br /><br />
+          Account Name: <a href="#" class="link text-sm"
+            >MUSLIM STUDENTS’ SOCIETY OF NIGERIA, KWARA STATE AREA UNIT</a
+          ><br />
+          Bank Name: <a href="#" class="link"
+            >ACCESS BANK</a
+          ><br />
+          Naira Account Number: <a href="#" class="link"
+            >0059214803</a
+          ><br />
+          Dollar Account Number: <a href="#" class="link"
+            >1382364830</a
           ><br />
         </p>
         <div class="mssnci-map">
@@ -187,7 +195,7 @@ export default {
         }
       }
       h2 {
-        @apply text-xl mb-16 text-orange-900;
+        @apply text-xl mb-32 text-orange-900;
         @media (max-width: 768px) {
           @apply text-xl;
         }
