@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <nuxt-link class="brand-logo" to="/" title="Muslim Student Society of Nigeria Center Ilorin">MSSNCI</nuxt-link>
+    <nuxt-link class="brand-logo" to="/" title="Muslim Students' Society of Nigeria Center Ilorin">MSSNCI</nuxt-link>
     <div class="hidden lg:flex items-center">
       <nuxt-link class="link" to="/">Home</nuxt-link>
       <nuxt-link class="link" to="/about">About</nuxt-link>

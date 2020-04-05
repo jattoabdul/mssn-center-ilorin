@@ -14,7 +14,7 @@
       </div>
     </header>
     <section class="welcome">
-      <h1 class="heading text-center">Welcome to the Muslim Student Society of Nigeria (MSSN) Center, Ilorin</h1>
+      <h1 class="heading text-center">Welcome to the Muslim Students' Society of Nigeria (MSSN) Center, Ilorin</h1>
 
       <div class="mx-auto wrapper grid grid-cols-1 lg:grid-cols-2 mt-20 gap-10">
         <img
@@ -115,7 +115,7 @@
               class="rounded-full shadow h-20 mr-4"
             />
             <div>
-              <p class="text-2xl font-medium uppercase">
+              <p class="text-2xl font-medium">
                 Prof. Yusuf ‘Lanre Badmus
               </p>
               <p class="text-xl font-semibold text-green-700">
@@ -131,7 +131,7 @@
               class="rounded-full shadow h-20 mr-4"
             />
             <div>
-              <p class="text-2xl font-medium uppercase">
+              <p class="text-2xl font-medium">
                 Arch. Sayfullah Ahmad Alege
               </p>
               <p class="text-xl font-semibold text-green-700">
@@ -147,7 +147,7 @@
               class="rounded-full shadow h-20 mr-4"
             />
             <div>
-              <p class="text-2xl font-medium uppercase">
+              <p class="text-2xl font-medium">
                 Dr. Aliu Alabi Badmus
               </p>
               <p class="text-xl font-semibold text-green-700">
@@ -163,7 +163,7 @@
               class="rounded-full shadow h-20 mr-4"
             />
             <div>
-              <p class="text-2xl font-medium uppercase">
+              <p class="text-2xl font-medium">
                 Barr. Nurudeen Ibrahim
               </p>
               <p class="text-xl font-semibold text-green-700">

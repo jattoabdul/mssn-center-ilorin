@@ -29,7 +29,7 @@
     </div>
     <section id="welcome" class="welcome">
       <h1 class="heading">
-        Welcome to the Muslim Student Society of Nigeria (MSSN) Center, Ilorin
+        Welcome to the Muslim Students' Society of Nigeria (MSSN) Center, Ilorin
       </h1>
       <p>
         The MSSN Center Ilorin is a Community Centre for all Muslims. The Center
