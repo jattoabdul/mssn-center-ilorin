@@ -85,32 +85,46 @@
       >
         <div class="categories py-10 px-5 border-b border-orange-300">
           <h2 class="text-2xl font-semibold mb-6 uppercase">Categories</h2>
+          <!-- Categories List -->
           <ul>
-            <li class="font-medium text-gray-800 mb-2">Family Life</li>
-            <li class="font-medium text-gray-800 mb-2">Islamic Identity</li>
-            <li class="font-medium text-gray-800 mb-2">Knowledge</li>
-            <li class="font-medium text-gray-800 mb-2">Marriage Advice</li>
-            <li class="font-medium text-gray-800 mb-2">Soul Purification</li>
-            <li class="font-medium text-gray-800 mb-2">
-              Special Months & Times
-            </li>
+            <!-- Data not loaded yet -->
+            <li v-if="!categories" class="font-medium text-gray-800 mb-2">Loading...</li>
+
+             <!-- If there are no posts... -->
+            <li v-if="!categories.length" class="font-medium text-gray-800 mb-2">No categories yet! Check Back Later 🙏🏾</li>
+
+            <!-- If there are some recent posts... -->
+            <li v-else v-for="category in categories" :key="`category-${category.id}`" class="font-medium text-gray-800 mb-2">{{ category.name }}</li>
           </ul>
         </div>
+        <!-- 5 Most Recent Posts List -->
         <div class="recent py-10 px-5">
           <h2 class="text-2xl font-semibold mb-6 uppercase">Recent posts</h2>
-          <div v-for="i in 2" :key="`recent-post-${i}`" class="post flex mb-10">
-            <img
-              src="/images/small_mosque.jpg"
-              class="w-20 object-contain mr-4"
-              alt="mosque"
-            />
-            <p>
-              <span class="text-xl font-semibold"
-                >Gender Equality and Justice in Islam</span
-              >
-              <span class="text-orange-900 block">July 11, 2019</span>
-            </p>
-          </div>
+          <!-- Data not loaded yet -->
+        <div  v-if="!recentPosts" class="post loading flex mb-10">
+          <p>loading...</p>
+        </div>
+
+        <!-- If there are no posts... -->
+        <div  v-if="!recentPosts.length" class="post flex mb-10">
+          <p>No posts yet! Check Back Later 🙏🏾</p>
+        </div>
+
+        <!-- If there are some recent posts... -->
+        <nuxt-link v-else v-for="recentPost in recentPosts" :key="`recent-post-${recentPost.id}`" :to="`/blog/${recentPost.slug}`" tag="div" class="post flex mb-10">
+          <img
+            v-if="recentPost.image"
+            :src="recentPost.image.publicUrl"
+            class="w-20 object-contain mr-4"
+            :alt="recentPost.slug"
+          />
+          <p>
+            <span class="text-xl font-semibold"
+              >{{ recentPost.title }}</span
+            >
+            <span class="text-orange-900 block">{{ formatDate(recentPost.posted, 'MMMM dd, yyyy') }}</span>
+          </p>
+        </nuxt-link>
         </div>
       </aside>
     </main>
@@ -151,6 +165,29 @@ const GET_POST = `
   }
 `;
 
+const GET_RECENT_POSTS = `
+  query GetRecentPosts($orderCondition: String!, $num: Int!) {
+    allPosts(orderBy: $orderCondition, first: $num) {
+      title
+      id
+      posted
+      slug
+      image {
+        publicUrl
+      }
+    }
+  }
+`;
+
+const GET_CATEGORIES = `
+  query GetCategories {
+    allPostCategories {
+      name
+      id
+    }
+  }
+`;
+
 /** 
   Helpers
 */
@@ -183,15 +220,27 @@ export default {
   async asyncData({ params }) {
     const slug = params.slug
     const { data } = await graphql(GET_POST, { slug });
+    const { data: recentData } = await graphql(GET_RECENT_POSTS, { orderCondition: "posted_DESC", num: 5 });
+    const { data: categoriesData } = await graphql(GET_CATEGORIES);
     return {
       slug,
       post: data.allPosts[0],
+      recentPosts: recentData.allPosts,
+      categories: categoriesData.allPostCategories,
     };
   },
   methods: {
     async getPost(slug=this.slug) {
       const { data } = await graphql(GET_POST, { slug });
       this.post = data.allPosts[0];
+    },
+    async getRecentPosts() {
+      const { data } = await graphql(GET_RECENT_POSTS, { orderCondition: "posted_DESC", num: 5 });
+      this.recentPosts = data.allPosts;
+    },
+    async getCategories() {
+      const { data } = await graphql(GET_CATEGORIES);
+      this.categories = data.allPostCategories;
     },
   }
 }
@@ -214,6 +263,9 @@ export default {
   .post {
     &:hover .overlay {
       display: flex;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 

@@ -272,51 +272,67 @@
     </section>
     <section class="blog-peek bg-gray-100">
       <h1 class="heading -mt-10 pb-10 uppercase">Our Recent News</h1>
+      <!-- Data not loaded yet -->
+      <div  v-if="!recentPosts" class="wrapper mx-auto my-10 grid row-gap-6 col-gap-10 grid-cols-1 lg:grid-cols-2">
+        <p>loading...</p>
+      </div>
+
+      <!-- If there are some recent posts... -->
       <div
+        v-else
         class="wrapper mx-auto my-10 grid row-gap-6 col-gap-10 grid-cols-1 lg:grid-cols-2"
       >
-        <div class="post hottest">
-          <img src="/images/mosque-design.jpeg" alt="learn" />
+        <!-- If there are no posts... -->
+        <div  v-if="!recentPosts.length" class="post hottest">
+          <p>No posts yet! Check Back Later 🙏🏾</p>
+        </div>
+        <!-- hottest post (first in  recent) -->
+        <div v-else class="post hottest">
+          <img
+            v-if="recentPosts[0].image"
+            :src="recentPosts[0].image.publicUrl"
+            :alt="recentPosts[0].slug"
+          />
           <div class="py-2 px-4">
             <p class="date-time">
-              <span>May 12, 2019</span>
+              <span>{{ formatDate(recentPosts[0].posted, 'MMMM dd, yyyy') }}</span>
               <!-- <span class="comment">3 Comments</span> -->
-              <span class="author">Ibrahim Yunus</span>
+              <span v-if="recentPosts[0].author" class="author">{{ recentPosts[0].author.name }}</span>
             </p>
             <p class="title">
-              Appreciating the graces of Allah
+              {{ recentPosts[0].title }}
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-              illo quia ullam commodi soluta, fugit impedit? Eaque explicabo,
-              perspiciatis blanditiis adipisci, animi quos dolor laboriosam
-              error et repellendus recusandae velit.
-            </p>
+            <div v-html="recentPosts[0].headline" />
             <nuxt-link
               v-ripple
-              to="/blog/detail"
+              :to="`/blog/${recentPosts[0].slug}`"
               tag="button"
               class="py-2 px-12 my-5 rounded text-2xl font-semibold bg-green-700 text-white focus:outline-none hover:bg-green-500"
               >Read more</nuxt-link
             >
           </div>
         </div>
-        <div class="recent">
-          <!-- <div v-for="i in 4" :key="i" class="post"> -->
+
+        <!-- If there are no posts or not more than one... -->
+        <div  v-if="recentPosts.length <= 1" class="recent">
+          <p>No more posts! Check Back Later for more 🙏🏾</p>
+        </div>
+        <!-- recent post list -->
+        <div v-else class="recent">
           <nuxt-link
-            v-for="i in 4"
-            :key="i"
-            to="/blog/detail"
+            v-for="recentPost in recentPosts.slice(1)"
+            :key="`home-recent-post-${recentPost.id}`"
+            :to="`/blog/${recentPost.slug}`"
             tag="div"
             class="post"
           >
             <p class="title">
-              10 Things you are Missing if you don’t Understand the Quran
+              {{ recentPost.title }}
             </p>
             <p class="date-time">
-              <span>July 11, 2017 |</span>
+              <span>{{ formatDate(recentPost.posted, 'MMMM dd, yyyy') }} |</span>
               <!-- <span class="comment">{{ i + 1 }} Comments</span> -->
-              <span class="author">Abdullah Isa</span>
+              <span v-if="recentPost.author" class="author">{{ recentPost.author.name }}</span>
             </p>
           </nuxt-link>
           <nuxt-link
@@ -340,7 +356,49 @@ import NavBar from '~/components/partials/nav'
 import FooTer from '~/components/partials/footer'
 import Stats from '~/components/partials/stats'
 
+/** 
+  GraphQL Queries & Mutations
+*/
+const GET_RECENT_POSTS = `
+  query GetRecentPosts($orderCondition: String!, $num: Int!) {
+    allPosts(orderBy: $orderCondition, first: $num) {
+      title
+      id
+      posted
+      slug
+      headline
+      image {
+        publicUrl
+      }
+      author {
+        name
+      }
+    }
+  }
+`;
+
+/** 
+  Helpers
+*/
+function graphql(query, variables = {}) {
+  return fetch(`${process.env.AppHostUrl}/admin/api`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      variables,
+      query,
+    }),
+  }).then(function(result) {
+    return result.json();
+  });
+}
+
 export default {
+  head: {
+    title: 'Home - MSSN Center Ilorin',
+  },
   components: {
     NavBar,
     FooTer,
@@ -352,6 +410,12 @@ export default {
     MuslimSalatApiUrl: process.env.MuslimSalatApiUrl,
     solatSchedule: {}
   }),
+  async asyncData() {
+    const { data: recentData } = await graphql(GET_RECENT_POSTS, { orderCondition: "posted_DESC", num: 5 });
+    return {
+      recentPosts: recentData.allPosts,
+    };
+  },
   mounted() {
     this.fetchSolatSchedule()
   },
@@ -369,7 +433,11 @@ export default {
       } finally {
         this.fetching = false
       }
-    }
+    },
+    async getRecentPosts() {
+      const { data } = await graphql(GET_RECENT_POSTS, { orderCondition: "posted_DESC", num: 5 });
+      this.recentPosts = data.allPosts;
+    },
   }
 }
 </script>
