@@ -30,6 +30,14 @@ const dev = process.env.NODE_ENV !== 'production';
 //   });
 // }
 
+console.log({
+  cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+  apiKey: process.env.CLOUDINARY_KEY,
+  apiSecret: process.env.CLOUDINARY_SECRET,
+  cloudUrl: process.env.CLOUDINARY_URL,
+  folder: `${process.env.NODE_ENV}_avatars`
+})
+
 const avatarFileAdapter = new CloudinaryAdapter({
   cloudName: process.env.CLOUDINARY_CLOUD_NAME,
   apiKey: process.env.CLOUDINARY_KEY,
