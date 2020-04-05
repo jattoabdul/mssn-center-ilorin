@@ -192,6 +192,28 @@
         contributing towards this great project for the enhancement of the
         Muslim Ummah.
       </p>
+      <p class="wrapper mx-auto my-10 text-xl">
+        You can also setup direct debit donations to the project from your account using the following account information below:
+        <br /><br />
+          Account Name: <a href="#" class="font-semibold"
+            >MUSLIM STUDENTS’ SOCIETY OF NIGERIA, KWARA STATE AREA UNIT</a
+          ><br />
+          Bank Name: <a href="#" class="font-semibold"
+            >ACCESS BANK</a
+          ><br />
+          Naira Account Number: <a href="#" class="font-semibold"
+            >0059214803</a
+          ><br />
+          Dollar Account Number: <a href="#" class="font-semibold"
+            >1382364830</a
+          ><br />
+          GBP Account Number: <a href="#" class="font-semibold"
+            >1382371472</a
+          ><br />
+      </p>
+      <p class="wrapper mx-auto my-10 text-xl">
+        May Allah bless you! Thank you. Those who (in charity) spend of their goods by night and by day, in secret and in public, have their reward with their Lord.
+      </p>
     </section>
     <stats />
     <foo-ter />

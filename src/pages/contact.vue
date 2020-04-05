@@ -105,7 +105,7 @@
             <button
               v-ripple
               type="submit"
-              class="mr-auto bg-orange-400 py-3 px-16 text-2xl text-gray-800 rounded my-3 font-mdium"
+              class="mr-auto bg-orange-400 py-3 px-16 text-2xl text-gray-800 rounded my-3 font-medium"
             >
               Submit
             </button>
