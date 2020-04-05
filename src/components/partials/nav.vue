@@ -1,12 +1,13 @@
 <template>
   <nav>
-    <nuxt-link class="brand-logo" to="/">MSSNCI</nuxt-link>
+    <nuxt-link class="brand-logo" to="/" title="Muslim Student Society of Nigeria Center Ilorin">MSSNCI</nuxt-link>
     <div class="hidden lg:flex items-center">
       <nuxt-link class="link" to="/">Home</nuxt-link>
       <nuxt-link class="link" to="/about">About</nuxt-link>
       <nuxt-link class="link" to="/services">Services</nuxt-link>
       <nuxt-link class="link" to="/projects">Projects</nuxt-link>
       <nuxt-link class="link" to="/blog">Blog</nuxt-link>
+      <nuxt-link class="link" to="/media" title="Gallery">Media</nuxt-link>
       <nuxt-link class="link" to="/contact">Contact</nuxt-link>
       <a
         v-ripple
@@ -37,6 +38,7 @@
         <nuxt-link v-ripple class="link" to="/services">Services</nuxt-link>
         <nuxt-link v-ripple class="link" to="/projects">Projects</nuxt-link>
       <nuxt-link v-ripple class="link" to="/blog">Blog</nuxt-link>
+      <nuxt-link v-ripple class="link" to="/media">Media</nuxt-link>
       <nuxt-link v-ripple class="link" to="/contact">Contact</nuxt-link>
       <a
         v-ripple

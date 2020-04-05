@@ -10,6 +10,7 @@
           <nuxt-link to="/services" tag="li">Services</nuxt-link>
           <nuxt-link to="/projects" tag="li">Projects</nuxt-link>
           <nuxt-link to="/blog" tag="li">Blog</nuxt-link>
+          <nuxt-link to="/media" tag="li" title="Gallery">Media</nuxt-link>
           <nuxt-link to="/contact" tag="li">Contact</nuxt-link>
           <li>
             <a
@@ -29,6 +30,7 @@
           <nuxt-link to="/services" tag="li">Counselling</nuxt-link>
           <nuxt-link to="/services" tag="li">Madrasah</nuxt-link>
           <nuxt-link to="/services" tag="li">Lodging/Hall Rentals</nuxt-link>
+          <nuxt-link to="/services" tag="li">Zakah/Sadaqah</nuxt-link>
           <nuxt-link to="/services" tag="li">IVC</nuxt-link>
         </ul>
       </div>

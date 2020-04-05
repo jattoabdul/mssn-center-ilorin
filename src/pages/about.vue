@@ -14,7 +14,7 @@
       </div>
     </header>
     <section class="welcome">
-      <h1 class="heading text-center">Welcome to MSSN Ilorin Center</h1>
+      <h1 class="heading text-center">Welcome to the Muslim Student Society of Nigeria (MSSN) Center, Ilorin</h1>
 
       <div class="mx-auto wrapper grid grid-cols-1 lg:grid-cols-2 mt-20 gap-10">
         <img
