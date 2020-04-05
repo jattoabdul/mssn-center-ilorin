@@ -65,7 +65,7 @@
           <!-- Author -->
           <div class="post-author flex my-10">
             <img
-            v-if="post.author && post.author.avatar"
+              v-if="post.author && post.author.avatar"
               :src="post.author.avatar.publicUrl"
               class="h-40 rounded mr-5"
               :alt="post.author.name"
