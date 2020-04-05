@@ -14,11 +14,24 @@
       </div>
     </header>
     <main class="wrapper my-24 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <!-- Post List -->
       <div class="posts lg:col-span-2">
-        <div v-for="i in 10" :key="`blog-post-${i}`" class="post mb-20">
+        <!-- Data not loaded yet -->
+        <div  v-if="!posts" class="post loading mb-20">
+          <p>loading...</p>
+        </div>
+
+        <!-- If there are no posts... -->
+        <div  v-if="!posts.length" class="post loading mb-20">
+          <p>No posts yet! Check Back Later 🙏🏾</p>
+        </div>
+  
+        <!-- If there are some... -->
+        <div v-else v-for="post in posts" :key="`blog-post-${post.id}`" class="post mb-20">
           <nuxt-link to="/blog/details" tag="div" class="post-pic relative">
             <img
-              src="/images/fine_mosque-min.jpg"
+              v-if="post.image"
+              :src="post.image.publicUrl"
               class="w-full h-full object-cover rounded"
               alt="preview"
             />
@@ -33,30 +46,22 @@
             tag="h1"
             class="text-4xl my-3 text-orange-900 font-semibold uppercase cursor-pointer"
           >
-            Gender Equality and Justice in Islam
+            {{ post.title }}
           </nuxt-link>
           <p class="flex items-center flex-wrap mb-5">
             <span
+              v-for="(cat, index) in post.categories"
+              :key="cat.id"
               class="mr-1 cursor-pointer text-orange-900 font-medium hover:text-green-800"
-              >Islamic Identity,</span
+              >{{ cat.name }}{{ index+1 >= post.categories.length ? ' | ' : ',' }}</span
             >
-            <span
-              class="mr-2 cursor-pointer text-orange-900 font-medium hover:text-green-800"
-              >Knowledge</span
-            >
-            <span class="mr-2 text-gray-700">July 11, 2017 |</span>
-            <span class="text-gray-700">Abdullah Idris</span>
+            <span class="mr-2 text-gray-700">{{ formatDate(post.posted, 'MMMM dd, yyyy') }} |</span>
+            <span class="text-gray-700">{{ post.author && post.author.name }}</span>
             <!-- <span class="text-gray-700">2 Comments</span> -->
           </p>
-          <p class="mb-6">
-            Leo, tellus vitae, erat ligula. Aliquet ac, elementum enim suscipit
-            porttitor molestie commodo, feugiat magnis. Quam dui quis quam morbi
-            potenti sodales, dapibus litora integer diam urna, sapien eu, a
-            sagittis ligula est urna nunc, eos nibh mus aliquam massa mi
-            iaculis. Massa id in faucibus nibh, convallis amet, enim…
-          </p>
+          <div class="mb-6" v-html="post.headline" />
           <nuxt-link
-            to="/blog/detail"
+            :to="`/blog/${post.slug}`"
             tag="button"
             class="bg-orange-500 text-white px-10 py-3 rounded focus:outline-none hover:bg-green-600"
             >Read more</nuxt-link
@@ -105,10 +110,69 @@
 import NavBar from '~/components/partials/nav'
 import FooTer from '~/components/partials/footer'
 
+/** 
+  GraphQL Queries & Mutations
+*/
+const GET_POSTS = `
+  query GetPosts {
+    allPosts {
+      title
+      id
+      headline
+      posted
+      slug
+      image {
+        publicUrl
+      }
+      categories {
+        id
+        name
+      }
+      author {
+        name
+      }
+    }
+  }
+`;
+
+/** 
+  Helpers
+*/
+function graphql(query, variables = {}) {
+  return fetch('http://localhost:3000/admin/api', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      variables,
+      query,
+    }),
+  }).then(function(result) {
+    return result.json();
+  });
+}
+
 export default {
+  head: {
+    title: 'Blog - MSSN Center Ilorin',
+  },
   components: {
     NavBar,
     FooTer
+  },
+  // Get the post items on server side
+  async asyncData() {
+    const { data } = await graphql(GET_POSTS);
+    return {
+      posts: data.allPosts,
+    };
+  },
+  methods: {
+    async getPosts() {
+      const { data } = await graphql(GET_POSTS);
+      this.posts = data.allPosts;
+    },
   }
 }
 </script>

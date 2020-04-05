@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { format } from 'date-fns'
 
 Vue.mixin({
   methods: {
@@ -53,9 +54,15 @@ Vue.mixin({
 
       return this.formatDate(new Date(new Date(shipmentDate).getTime() + (1000 * 60 * 60 * 24 * 14)))
     },
-    formatDate(time) {
-      const dateTime = new Date(time)
-      return `${this.$monthShort[dateTime.getMonth()]} ${dateTime.getDate()}, ${dateTime.getFullYear()}`
+    formatDate(dateTime, dateFormat) {
+      return format(new Date(dateTime), dateFormat)
+    },
+    toTitleCase(phrase) {
+      return phrase
+        .toLowerCase()
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
     },
     isEqual(value, other) {
       // Get the value type

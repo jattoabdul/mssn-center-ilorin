@@ -30,17 +30,12 @@ const dev = process.env.NODE_ENV !== 'production';
 //   });
 // }
 
-// TODO: use `https://res.cloudinary.com/mssn-center-ilorin/image/upload/c_fill,g_faces,h_200,w_300/sample.jpg` PRESETNAME => lh69urw5
 const avatarFileAdapter = new CloudinaryAdapter({
   cloudName: process.env.CLOUDINARY_CLOUD_NAME,
   apiKey: process.env.CLOUDINARY_KEY,
   apiSecret: process.env.CLOUDINARY_SECRET,
   folder: 'avatars'
 });
-// const avatarFileAdapter = new LocalFileAdapter({
-//   src: 'src/static/avatars',
-//   path: '/static/avatars',
-// });
 
 const fileAdapter = new CloudinaryAdapter({
   cloudName: process.env.CLOUDINARY_CLOUD_NAME,
@@ -48,19 +43,15 @@ const fileAdapter = new CloudinaryAdapter({
   apiSecret: process.env.CLOUDINARY_SECRET,
   folder: 'uploads'
 });
-// const fileAdapter = new LocalFileAdapter({
-//   src: `${dev ? 'src/' : 'dist/'}static/uploads`,
-//   path: '/static/uploads',
-// });
 
 // TODO: Add Authentication using Author as User
 exports.Author = {
   fields: {
     name: { type: Text },
     email: { type: Text, isUnique: true },
+    bio: { type: Wysiwyg },
     password: { type: Password },
     isAdmin: { type: Checkbox },
-    // avatar: { type: File, adapter: avatarFileAdapter },
     avatar: {
       type: CloudinaryImage,
       adapter: avatarFileAdapter
@@ -102,31 +93,14 @@ exports.Post = {
         { label: 'Published', value: 'published' },
       ],
     },
+    headline: { type: Wysiwyg },
     body: { type: Wysiwyg },
     posted: { type: DateTime, format: 'DD/MM/YYYY' },
     image: {
       type: CloudinaryImage,
       adapter: fileAdapter
     },
-    // image: {
-    //   type: File,
-    //   adapter: fileAdapter,
-    //   hooks: {
-    //     beforeChange: async ({ existingItem }) => {
-    //       if (existingItem && existingItem.image) {
-    //         await fileAdapter.delete(existingItem.image);
-    //       }
-    //     },
-    //   },
-    // },
   },
-  // hooks: {
-  //   afterDelete: ({ existingItem }) => {
-  //     if (existingItem.image) {
-  //       fileAdapter.delete(existingItem.image);
-  //     }
-  //   },
-  // },
   adminConfig: {
     defaultPageSize: 20,
     defaultColumns: 'title, status',
