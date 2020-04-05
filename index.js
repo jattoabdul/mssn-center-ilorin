@@ -95,7 +95,8 @@ const NuxtConfig = {
   },
   axios: {},
   env: {
-    MuslimSalatApiUrl: process.env.MUSLIM_SALAT_API_URL
+    MuslimSalatApiUrl: process.env.MUSLIM_SALAT_API_URL,
+    AppHostUrl: process.env.APP_HOST_URL
   }
 };
 

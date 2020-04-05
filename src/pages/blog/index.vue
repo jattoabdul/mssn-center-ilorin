@@ -139,7 +139,7 @@ const GET_POSTS = `
   Helpers
 */
 function graphql(query, variables = {}) {
-  return fetch('http://localhost:3000/admin/api', {
+  return fetch(`${process.env.AppHostUrl}/admin/api`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
