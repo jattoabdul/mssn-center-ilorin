@@ -20,7 +20,7 @@
           <img src="/vectors/mosque.svg" alt="advice" class="icon h-20" />
           <p class="title" style="color: #965352;">Daily/Jum'ah Prayer</p>
           <p>
-            Friday Khutba start at 12:30 pm
+            Friday Khutba start at 1:15 pm
             <br />We perform all the five daily solawaat at the times specified on our
             prayer time app on this website.
           </p>
