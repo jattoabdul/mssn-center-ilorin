@@ -122,7 +122,7 @@
             The Society and the centre is offering Zakah Administration services
             through a specially constituted committee of experts. Members of the
             public are free to contact the Centre for any advice or request
-            regarding the calculation and disbursements if their Zakah
+            regarding the calculation and disbursements of their Zakah
           </p>
           <p class="my-2">
             <a href="#" class="text-orange-800 hover:underline">Learn more</a>

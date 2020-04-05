@@ -1,5 +1,5 @@
 <template>
-  <div class="page contact">
+  <div class="page projects">
     <header class="pb-0 lg:pb-10">
       <nav-bar />
       <div
@@ -29,7 +29,7 @@
     </div>
     <section id="welcome" class="welcome">
       <h1 class="heading">
-        Welcome to the MSSN Center, Ilorin
+        Welcome to the Muslim Student Society of Nigeria (MSSN) Center, Ilorin
       </h1>
       <p>
         The MSSN Center Ilorin is a Community Centre for all Muslims. The Center
@@ -172,18 +172,6 @@
             A Primary health Care Facility
           </p>
         </div>
-        <div class="feature">
-          <img src="/images/fine_mosque-min.jpg" alt="mosque" />
-          <div class="flex justify-between">
-            <h1 class="text-2xl font-semibold uppercase text-orange-800 my-1">
-              Sports Center
-            </h1>
-            <span class="text-gray-800">Target:200million</span>
-          </div>
-          <p>
-            Bookable Sports Center
-          </p>
-        </div>
       </div>
       <p class="wrapper mx-auto my-10 text-xl">
         The aspiration for a centre of this kind has been nurtured by the
@@ -230,7 +218,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contact {
+.projects {
   header {
     @apply pt-5 relative bg-orange-900;
     background-image: url('/images/bg.webp');
