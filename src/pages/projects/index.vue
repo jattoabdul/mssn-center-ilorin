@@ -94,8 +94,7 @@
             <span class="text-gray-800">Target:200million</span>
           </div>
           <p>
-            A rentable Multipurpose hall/Events centre for islamic and general
-            non-islamic activities.
+            A rentable Multipurpose hall/Events centre for islamic and general activities.
           </p>
         </div>
         <div class="feature">

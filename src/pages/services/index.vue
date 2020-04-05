@@ -165,6 +165,55 @@
         </p>
       </div>
     </section>
+    <section class="services services-group-3">
+      <!-- <h1 class="heading uppercase -mt-12 pb-16 text-center">Our Services</h1> -->
+      <div
+        class="mx-auto wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-gap-10 row-gap-12"
+      >
+        <div class="service">
+          <img src="/vectors/hotel.svg" alt="advice" class="icon h-20" />
+          <p class="title" style="color: #965352;">Ramadan/I'tikaf</p>
+          <p>
+            We would run charity operations to help the needy break fast during ramadan and also provide enabling environment in our masjid to host people for i'tikaf.
+          </p>
+          <p class="my-2">
+            <a href="#" class="text-orange-800 hover:underline">Learn more</a>
+          </p>
+        </div>
+        <!-- <div class="service">
+          <img src="/vectors/camp.svg" alt="advice" class="icon h-20" />
+          <p class="title" style="color: #965352;">
+            Camping/
+            <span title="Islamic Vacation Course">IVC</span>
+          </p>
+          <p>
+            The IVC/Camping is Bi-annual Islamic Vacation Course held during the
+            Easter and Christmas holidays corresponding to March/April and
+            December respectively. It is a forum where students are enlightened
+            on various topical issues of Islamic interest, exposed to the global
+            views of Islamic polity and given practical training on application
+            of Islamic principles and other benefits like the social interaction
+            and re- enforcement of academic excellence through group efforts.
+          </p>
+          <p class="my-2">
+            <a href="#" class="text-orange-800 hover:underline">Learn more</a>
+          </p>
+        </div>
+        <div class="service">
+          <img src="/vectors/invest.svg" alt="advice" class="icon h-20" />
+          <p class="title" style="color: #965352;">Zakaah / Sadaqah</p>
+          <p>
+            The Society and the centre is offering Zakah Administration services
+            through a specially constituted committee of experts. Members of the
+            public are free to contact the Centre for any advice or request
+            regarding the calculation and disbursements of their Zakah
+          </p>
+          <p class="my-2">
+            <a href="#" class="text-orange-800 hover:underline">Learn more</a>
+          </p>
+        </div> -->
+      </div>
+    </section>
     <stats />
     <foo-ter />
   </div>
