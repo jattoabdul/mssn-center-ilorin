@@ -6,7 +6,7 @@
         class="banner flex lg:flex-row flex-col justify-between lg:pt-32 pt-20"
       >
         <div class="quote px-16 lg:pl-3 lg:pr-32">
-          <p class="text">
+          <p class="text arabic">
             وَٱعْتَصِمُواْ بِحَبْلِ ٱللَّهِ جَمِيعًا وَلَا تَفَرَّقُواْ
           </p>
           <p class="sub-text">
@@ -491,6 +491,10 @@ export default {
     .text {
       @apply text-white text-right;
       font-size: 7rem;
+
+      &.arabic {
+        font-family: 'Amiri', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      }
 
       @media (max-width: 768px) {
         font-size: 3rem;

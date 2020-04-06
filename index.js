@@ -41,7 +41,8 @@ const NuxtConfig = {
     ],
     link: [
       // Fonts
-      // { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Poppins:400,700,900|Rubik:400,500,600,700,800' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Poppins:400,700,900|Rubik:400,500,600,700,800' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Amiri:400,700,900|Rubik:400,500,600,700,800' },
       // Favicons
       { rel: 'apple-touch-icon', sizes: '57x57', href: '/favicons/apple-icon-57x57.png' },
       { rel: 'apple-touch-icon', sizes: '60x60', href: '/favicons/apple-icon-60x60.png' },

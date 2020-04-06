@@ -73,6 +73,7 @@ section.stat {
       @apply font-bold text-6xl font-mono;
     }
     .arabic {
+      font-family: 'Amiri', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       @apply font-bold text-4xl;
     }
     .topic {
