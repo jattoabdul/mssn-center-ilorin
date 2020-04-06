@@ -14,7 +14,9 @@
       </div>
     </header>
     <h1 class="text-4xl text-orange-800 text-center font-semibold my-20">
-      MSSN CENTER ILORIN <br />
+      Muslim Students' Society of Nigeria (MSSN) <br />
+      Kwara State Area Unit (KWAU)<br />
+      MSS CENTER ILORIN <br />
       DEVELOPMENT PROJECT
     </h1>
     <div class="wrapper bg-gray-300 mx-auto">
@@ -28,9 +30,7 @@
       />
     </div>
     <section id="welcome" class="welcome">
-      <h1 class="heading">
-        Welcome to the Muslim Students' Society of Nigeria (MSSN) Center, Ilorin
-      </h1>
+      <h1 class="heading">Welcome to the Muslim Students' Society of Nigeria (MSSN) <br />Kwara State Area Unit (KWAU) <br /> MSS Center, Ilorin</h1>
       <p>
         The MSSN Center Ilorin is a Community Centre for all Muslims. The Center
         is committed to preserving an Islamic identity, building and supporting

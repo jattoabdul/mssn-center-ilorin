@@ -14,7 +14,7 @@
       </div>
     </header>
     <section class="welcome">
-      <h1 class="heading text-center">Welcome to the Muslim Students' Society of Nigeria (MSSN) Center, Ilorin</h1>
+      <h1 class="heading text-center">Welcome to the Muslim Students' Society of Nigeria (MSSN) <br />Kwara State Area Unit (KWAU) <br /> MSS Center, Ilorin</h1>
 
       <div class="mx-auto wrapper grid grid-cols-1 lg:grid-cols-2 mt-20 gap-10">
         <img
@@ -110,7 +110,7 @@
         <div class="bg-white shadow rounded p-12">
           <div class="flex items-center border-b mb-8 pb-8">
             <img
-              src="/images/nasir.jpg"
+              src="/images/dummy.png"
               alt="nasir"
               class="rounded-full shadow h-20 mr-4"
             />
@@ -126,7 +126,7 @@
           </div>
           <div class="flex items-center border-b mb-8 pb-8">
             <img
-              src="/images/nasir.jpg"
+              src="/images/dummy.png"
               alt="nasir"
               class="rounded-full shadow h-20 mr-4"
             />
@@ -142,7 +142,7 @@
           </div>
           <div class="flex items-center border-b mb-8 pb-8">
             <img
-              src="/images/nasir.jpg"
+              src="/images/dummy.png"
               alt="nasir"
               class="rounded-full shadow h-20 mr-4"
             />
@@ -158,7 +158,7 @@
           </div>
           <div class="flex items-center">
             <img
-              src="/images/nasir.jpg"
+              src="/images/dummy.png"
               alt="nasir"
               class="rounded-full shadow h-20 mr-4"
             />
@@ -221,7 +221,7 @@
       <div class="wrapper mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
         <img
           src="/images/yahya.png"
-          alt="shuaib"
+          alt="prof orire"
           class="rounded-full shadow max-h-full block mx-auto"
           style="max-width: 20rem"
         />

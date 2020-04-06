@@ -64,9 +64,7 @@
       </div>
     </header>
     <section id="welcome" class="welcome">
-      <h1 class="heading">
-        Welcome to the Muslim Students' Society of Nigeria (MSSN) Center, Ilorin
-      </h1>
+      <h1 class="heading">Welcome to the Muslim Students' Society of Nigeria (MSSN) <br />Kwara State Area Unit (KWAU) <br /> MSS Center, Ilorin</h1>
       <p>
         The MSSN Center Ilorin is a Community Centre for all Muslims. The Center
         is committed to preserving an Islamic identity, building and supporting
