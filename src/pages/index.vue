@@ -29,7 +29,8 @@
           <div v-else class="solats">
             <p class="location">Prayer times in {{ solatLocation }}</p>
             <p class="heading">
-              {{ solatSchedule.date_for }}
+              <!-- {{ solatSchedule && solatSchedule.date_for ? `${solatSchedule.date_for.split('-')[2]}-${solatSchedule.date_for.split('-')[1]}-${solatSchedule.date_for.split('-')[0]}` : '' }} -->
+              {{  solatSchedule && solatSchedule.date_for ? formatDate(`${solatSchedule.date_for.split('-')[2]}/${solatSchedule.date_for.split('-')[1]}/${solatSchedule.date_for.split('-')[0]}`, 'dd MMMM yyyy') : '' }}
             </p>
             <p class="timing">
               <span>Fajr</span>
