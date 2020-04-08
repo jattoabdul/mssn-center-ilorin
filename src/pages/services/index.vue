@@ -34,7 +34,7 @@
           <p>
             Islamic Funeral and Burial Arrangement/Service
             <br />” …to Allah we Belong and to Him we Will Return”
-            <br />The MSSN Centre Ilorin will assist your family…
+            <br />The MSS Centre Ilorin will assist your family…
           </p>
           <p class="my-2">
             <a href="#" class="text-orange-800 hover:underline">Learn more</a>

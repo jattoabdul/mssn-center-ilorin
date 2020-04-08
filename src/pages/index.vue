@@ -59,9 +59,9 @@
       </div>
     </header>
     <section id="welcome" class="welcome">
-      <h1 class="heading">Welcome to the Muslim Students' Society of Nigeria (MSSN) Centre, Ilorin</h1>
+      <h1 class="heading">Welcome to the Muslim Students' Society (MSS) Centre, Ilorin</h1>
       <p>
-        The MSSN Centre Ilorin is a Community Centre for all Muslims. The Centre
+        The MSS Centre Ilorin is a Community Centre for all Muslims. The Centre
         is committed to preserving the Islamic identity, building and supporting
         a viable Muslim community, promoting a comprehensive Islamic way of life
         and education, based on the Holy Qur'an and the Sunnah of Prophet
@@ -369,7 +369,7 @@ function graphql(query, variables = {}) {
 
 export default {
   head: {
-    title: "Home - MSSN Centre Ilorin"
+    title: "Home - MSS Centre Ilorin"
   },
   components: {
     NavBar,

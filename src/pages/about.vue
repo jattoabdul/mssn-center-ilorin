@@ -14,20 +14,20 @@
     <section class="welcome">
       <h1
         class="heading text-center"
-      >Welcome to the Muslim Students' Society of Nigeria (MSSN) Centre, Ilorin</h1>
+      >Welcome to the Muslim Students' Society (MSS) Centre, Ilorin</h1>
 
       <div class="mx-auto wrapper grid grid-cols-1 lg:grid-cols-2 mt-20 gap-10">
         <img src="/images/white-mosque.jpg" class="w-full h-full object-cover" alt="masjid" />
         <div class="flex flex-col justify-between">
           <p class="mb-3 text-base">
-            The MSSN Centre Ilorin is a Community Centre for all Muslims. The
+            The MSS Centre Ilorin is a Community Centre for all Muslims. The
             Centre is committed to preserving the Islamic identity, building and
             supporting a viable Muslim community, promoting a comprehensive
             Islamic way of life and education, based on the Holy Qur'an and the
             Sunnah of Prophet Muhammad (PBUH).
           </p>
           <p class="mb-3 text-base">
-            The MSSN Centre Ilorin is intended to serve as a viable Islamic
+            The MSS Centre Ilorin is intended to serve as a viable Islamic
             institution and physical base of operations from which the
             activities towards the realization of the lofty aspirations of the
             Society can be coordinated and implemented. Accordingly, the Centre

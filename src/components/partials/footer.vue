@@ -90,7 +90,7 @@
       </div>
     </div>
     <div class="copyright">
-      Copyright &copy; {{ new Date().getFullYear() }} by MSSN Centre, Ilorin.
+      Copyright &copy; {{ new Date().getFullYear() }} by MSS Centre, Ilorin.
       Powered by Codevillage LLC
     </div>
   </footer>

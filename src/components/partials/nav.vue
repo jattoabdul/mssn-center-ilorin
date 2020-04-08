@@ -4,7 +4,7 @@
       class="brand-logo"
       to="/"
       title="Muslim Students' Society of Nigeria Centre Ilorin"
-    >MSSNCI</nuxt-link>
+    >MSSCI</nuxt-link>
     <div class="hidden lg:flex items-center">
       <nuxt-link class="link" to="/">Home</nuxt-link>
       <nuxt-link class="link" to="/about">About</nuxt-link>

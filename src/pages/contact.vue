@@ -19,7 +19,7 @@
     >
       <div class="contact-info">
         <h1>Contact Info</h1>
-        <h2>MSSN CENTRE ILORIN (MSSNCI)</h2>
+        <h2>MSS CENTRE ILORIN (MSSCI)</h2>
         <p class="physical-contact">
           Opposite Ilorin International Aviation College, <br />Along Ilorin-Ogbomoso road, Ilorin. <br />
           Kwara State, NG 32802
@@ -65,7 +65,7 @@
       <div class="get-in-touch">
         <h1>Get In Touch</h1>
         <h2>
-          Have questions about MSSNCI projects or services? Let us help. Use our
+          Have questions about MSSCI projects or services? Let us help. Use our
           contact form and we’ll get back to you as soon as possible.
         </h2>
         <div class="get-in-touch-form">

@@ -12,7 +12,7 @@ const { Todo, Post, PostCategory, Author } = require('./schema');
 
 dotenv.config()
 
-const PROJECT_NAME = "MSSN Centre Ilorin";
+const PROJECT_NAME = "MSS Centre Ilorin";
 
 
 const keystone = new Keystone({
@@ -24,7 +24,7 @@ const NuxtConfig = {
   srcDir: 'src',
   buildDir: 'dist',
   head: {
-    title: 'MSSN Centre Ilorin' || process.env.npm_package_name,
+    title: 'MSS Centre Ilorin' || process.env.npm_package_name,
     htmlAttrs: {
       lang: 'en'
     },
@@ -32,9 +32,9 @@ const NuxtConfig = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
-      { hid: 'og:site_name', name: 'og:site_name', content: 'MSSN Centre Ilorin' },
-      { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: 'MSSNCI' },
-      { hid: 'og:title', name: 'og:title', content: 'MSSN Centre Ilorin' },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'MSS Centre Ilorin' },
+      { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: 'MSSCI' },
+      { hid: 'og:title', name: 'og:title', content: 'MSS Centre Ilorin' },
       { name: 'msapplication-TileColor', content: '#FFFFFF' },
       { name: 'msapplication-TileImage', content: '/favicons/ms-icon-144x144.png' },
       { name: 'theme-color', content: '#FFFFFF' }
