@@ -34,7 +34,7 @@
           <p>
             Islamic Funeral and Burial Arrangement/Service
             <br />” …to Allah we Belong and to Him we Will Return”
-            <br />The MSSN Center Ilorin will assist your family…
+            <br />The MSSN Centre Ilorin will assist your family…
           </p>
           <p class="my-2">
             <a href="#" class="text-orange-800 hover:underline">Learn more</a>
@@ -60,13 +60,13 @@
     <section class="school">
       <span />
       <div class="text-white">
-        <h1 class="heading text-center text-white">Islamic School</h1>
+        <h1 class="heading text-center text-white">Madrasah (Islamic School)</h1>
         <p
           class="max-w-2xl mx-auto text-center text-xl border-b border-gray-100 pb-10 text-gray-200"
         >
-          The Weekend School of the Islamic Center of Allah is committed to
+          The Weekend School of the Islamic Centre of Allah is committed to
           providing quality Islamic Education according to the Quran and the
-          Sunnah of the Prophet Mohammed (Peace Be upon Him) to a diverse
+          Sunnah of the Prophet Muhammad (Peace Be upon Him) to a diverse
           student population in the greater area.
         </p>
         <button
@@ -140,7 +140,7 @@
         <p class="mx-auto max-w-3xl text-center text-2xl font-light mt-6">
           Support our Islamic Centre Project. The project is intended as a world
           class Islamic Centre which shall include a Multipurpose Hall/Events
-          Centre, Guest Lodge and Residence, School, Educational Facilities and
+          Centre, Guest Lodge and Residence, Madrasah (Islamic School), Educational Facilities and
           a Technical/Skill Acquisition Centre, Library, A Mosque, Shopping
           Complex, Warehouse and Primary Health Care Facility. The project shall
           be executed in tranches and each of these structures shall be
@@ -173,9 +173,7 @@
         <div class="service">
           <img src="/vectors/hotel.svg" alt="advice" class="icon h-20" />
           <p class="title" style="color: #965352;">Ramadan/I'tikaf</p>
-          <p>
-            We would run charity operations to help the needy break fast during ramadan and also provide enabling environment in our masjid to host people for i'tikaf.
-          </p>
+          <p>We would run charity operations to help the needy break fast during ramadan and also provide enabling environment in our masjid to host people for i'tikaf.</p>
           <p class="my-2">
             <a href="#" class="text-orange-800 hover:underline">Learn more</a>
           </p>
@@ -211,7 +209,7 @@
           <p class="my-2">
             <a href="#" class="text-orange-800 hover:underline">Learn more</a>
           </p>
-        </div> -->
+        </div>-->
       </div>
     </section>
     <stats />

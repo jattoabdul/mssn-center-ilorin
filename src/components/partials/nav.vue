@@ -1,6 +1,10 @@
 <template>
   <nav>
-    <nuxt-link class="brand-logo" to="/" title="Muslim Students' Society of Nigeria Center Ilorin">MSSNCI</nuxt-link>
+    <nuxt-link
+      class="brand-logo"
+      to="/"
+      title="Muslim Students' Society of Nigeria Centre Ilorin"
+    >MSSNCI</nuxt-link>
     <div class="hidden lg:flex items-center">
       <nuxt-link class="link" to="/">Home</nuxt-link>
       <nuxt-link class="link" to="/about">About</nuxt-link>
@@ -14,8 +18,7 @@
         class="button focus:outline-none"
         href="https://paystack.com/pay/mssnci"
         target="_blank"
-        >Donate now</a
-      >
+      >Donate now</a>
     </div>
     <div class="menu-box flex lg:hidden">
       <img
@@ -37,16 +40,10 @@
         <nuxt-link v-ripple class="link" to="/about">About</nuxt-link>
         <nuxt-link v-ripple class="link" to="/services">Services</nuxt-link>
         <nuxt-link v-ripple class="link" to="/projects">Projects</nuxt-link>
-      <nuxt-link v-ripple class="link" to="/blog">Blog</nuxt-link>
-      <nuxt-link v-ripple class="link" to="/media">Media</nuxt-link>
-      <nuxt-link v-ripple class="link" to="/contact">Contact</nuxt-link>
-      <a
-        v-ripple
-        class="link"
-        href="https://paystack.com/pay/mssnci"
-        target="_blank"
-        >Donate now</a
-      >
+        <nuxt-link v-ripple class="link" to="/blog">Blog</nuxt-link>
+        <nuxt-link v-ripple class="link" to="/media">Media</nuxt-link>
+        <nuxt-link v-ripple class="link" to="/contact">Contact</nuxt-link>
+        <a v-ripple class="link" href="https://paystack.com/pay/mssnci" target="_blank">Donate now</a>
       </div>
     </div>
   </nav>
@@ -57,7 +54,7 @@ export default {
   data: () => ({
     menuOpen: false
   })
-}
+};
 </script>
 
 <style lang="scss" scoped>

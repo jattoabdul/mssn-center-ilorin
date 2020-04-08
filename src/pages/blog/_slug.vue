@@ -209,7 +209,7 @@ function graphql(query, variables = {}) {
 export default {
   head() {
     return {
-      title: `${this.toTitleCase(this.slug.replace(/-/g, ' '))} - Blog - MSSN Center Ilorin`
+      title: `${this.toTitleCase(this.slug.replace(/-/g, ' '))} - Blog - MSSN Centre Ilorin`
     }
   },
   components: {

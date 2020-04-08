@@ -1,8 +1,6 @@
 <template>
   <footer>
-    <div
-      class="wrapper mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
-    >
+    <div class="wrapper mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
       <div class="group">
         <p class="title">Menu</p>
         <ul>
@@ -17,8 +15,7 @@
               class="focus:outline-none"
               href="https://paystack.com/pay/mssnci"
               target="_blank"
-              >Donate</a
-            >
+            >Donate</a>
           </li>
         </ul>
       </div>
@@ -42,15 +39,16 @@
               class="focus:outline-none"
               href="tel:+234 803 397 9970"
               target="_blank"
-              >+234 803 397 9970</a
-            >
+            >+234 803 397 9970</a>
           </li>
           <li>mssncenterilorin@gmail.com</li>
           <li>
-            Airport Road, <br />
-            along Ilorin-Ogbomoso express way
+            Opposite Ilorin International
+            <br />Aviation College
           </li>
-          <li>Adjacent Ilorin International <br />Aviation College, Ilorin</li>
+          <li>
+            Along Ilorin-Ogbomoso road, Ilorin.
+          </li>
           <li>Kwara State, NG</li>
         </ul>
       </div>
@@ -62,46 +60,37 @@
               class="focus:outline-none"
               href="https://facebook.com/mssnci"
               target="_blank"
-              >Facebook</a
-            >
+            >Facebook</a>
           </li>
           <li>
             <a
               class="focus:outline-none"
               href="https://instagram.com/mssnci"
               target="_blank"
-              >Instagram</a
-            >
+            >Instagram</a>
           </li>
           <li>
-            <a
-              class="focus:outline-none"
-              href="https://twitter.com/mssnci"
-              target="_blank"
-              >Twitter</a
-            >
+            <a class="focus:outline-none" href="https://twitter.com/mssnci" target="_blank">Twitter</a>
           </li>
           <li>
             <a
               class="focus:outline-none"
               href="https://pinterest.com/mssnci"
               target="_blank"
-              >Pinterest</a
-            >
+            >Pinterest</a>
           </li>
           <li>
             <a
               class="focus:outline-none"
               href="https://linkedin.com/in/mssnci"
               target="_blank"
-              >LinkedIn</a
-            >
+            >LinkedIn</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="copyright">
-      Copyright &copy; {{ new Date().getFullYear() }} by MSSN Center, Ilorin.
+      Copyright &copy; {{ new Date().getFullYear() }} by MSSN Centre, Ilorin.
       Powered by Codevillage LLC
     </div>
   </footer>
@@ -109,7 +98,7 @@
 
 <style lang="scss" scoped>
 footer {
-  background-image: url('/images/footer-bg.webp');
+  background-image: url("/images/footer-bg.webp");
   background-color: black;
   background-size: cover;
   @apply pt-20 text-white;

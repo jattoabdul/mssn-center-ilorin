@@ -192,7 +192,7 @@ function graphql(query, variables = {}) {
 
 export default {
   head: {
-    title: 'Blog - MSSN Center Ilorin',
+    title: 'Blog - MSSN Centre Ilorin',
   },
   components: {
     NavBar,

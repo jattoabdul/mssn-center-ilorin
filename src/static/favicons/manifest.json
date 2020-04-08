@@ -1,11 +1,11 @@
 {
  "manifest_version": 1,
-  "name": "MSSN Center Ilorin",
+  "name": "MSSN Centre Ilorin",
   "short_name": "MSSNCI",
   "version": "1.0.0",
   "version_name": "Version een",
   "default_locale": "en",
-  "description": "Welcome to the MSSN Center Ilorin. The purpose for which the MSSN Center Ilorin was developed is to receive, administer and support Islam.",
+  "description": "Welcome to the MSSN Centre Ilorin. The purpose for which the MSSN Centre Ilorin was developed is to receive, administer and support Islam.",
   "theme_color": "#33cccd",
  "icons": [
   {

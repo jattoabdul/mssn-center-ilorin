@@ -19,10 +19,9 @@
     >
       <div class="contact-info">
         <h1>Contact Info</h1>
-        <h2>MSSN Center ILORIN (MSSNCI)</h2>
+        <h2>MSSN CENTRE ILORIN (MSSNCI)</h2>
         <p class="physical-contact">
-          Airport Road, along Ilorin-Ogbomoso express way, <br />Adjacent Ilorin
-          International Aviation College, Ilorin,<br />
+          Opposite Ilorin International Aviation College, <br />Along Ilorin-Ogbomoso road, Ilorin. <br />
           Kwara State, NG 32802
         </p>
         <p class="electronic-contact">

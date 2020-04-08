@@ -1,6 +1,6 @@
-# MSSN Center Ilorin
+# MSSN Centre Ilorin
 
-> Welcome to the MSSN Center Ilorin. The purpose for which the MSSN Center Ilorin was developed is to receive, administer and support Islam.
+> Welcome to the MSSN Centre Ilorin. The purpose for which the MSSN Centre Ilorin was developed is to receive, administer and support Islam.
 
 ## Method 1: Local Build Setup
 
